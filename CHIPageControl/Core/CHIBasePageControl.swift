@@ -146,7 +146,7 @@ import UIKit
         }
         tintColors[position] = color
     }
-    
+
     private func setupTintColors() {
         tintColors = Array<UIColor>(repeating: tintColor, count: numberOfPages)
     }

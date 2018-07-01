@@ -25,8 +25,7 @@
 
 import UIKit
 
-open class CHIPageControlAleppo: CHIBasePageControl {
-
+open class CHIPageControlSize: CHIBasePageControl {
     fileprivate var diameter: CGFloat {
         return radius * 2
     }
@@ -68,12 +67,13 @@ open class CHIPageControlAleppo: CHIBasePageControl {
 
         var frame = active.frame
 
-        frame.origin.x = CGFloat(normalized) + firstFrame.origin.x
+        frame.origin.x = CGFloat(normalized) + firstFrame.origin.x - self.diameter / 5
         frame.size.width = frame.height * CGFloat(mult)
-        frame.size.height = self.diameter
+        frame.size.height = self.diameter * 1.5
 
         active.frame = frame
     }
+
 
     override open func layoutSubviews() {
         super.layoutSubviews()
@@ -83,9 +83,9 @@ open class CHIPageControlAleppo: CHIBasePageControl {
         let y = (self.bounds.size.height - self.diameter)*0.5
         var frame = CGRect(x: x, y: y, width: self.diameter, height: self.diameter)
 
-        active.cornerRadius = self.radius
-        active.backgroundColor = (self.currentPageTintColor ?? self.tintColor)?.cgColor
-        active.frame = frame
+        active.cornerRadius = self.radius * 1.5
+        active.backgroundColor = tintColors[currentPage].cgColor
+        active.frame = CGRect(x: x - self.diameter / 5, y: y - self.diameter / 5, width: self.diameter * 1.5, height: self.diameter * 1.5)
 
         inactive.enumerated().forEach() { index, layer in
             layer.backgroundColor = self.tintColor(position: index).withAlphaComponent(self.inactiveTransparency).cgColor

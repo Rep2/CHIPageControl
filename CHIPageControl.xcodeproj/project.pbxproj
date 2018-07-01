@@ -25,6 +25,7 @@
 		4313A8191E7A99F20015A568 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4313A7F01E7A92BB0015A568 /* CoreGraphics.framework */; };
 		4313A8251E7AA0310015A568 /* CHIBasePageControl.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4313A7DD1E7A92320015A568 /* CHIBasePageControl.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		43EE766F1E7AA29E002140B5 /* CHIPageControlJaloro.swift in Headers */ = {isa = PBXBuildFile; fileRef = 4313A7D91E7A92320015A568 /* CHIPageControlJaloro.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		F687265C20E9617C00231552 /* CHIPageControlSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F687265B20E9617C00231552 /* CHIPageControlSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4313A7EE1E7A92B30015A568 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4313A7F01E7A92BB0015A568 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4313A7F21E7A92C40015A568 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F687265B20E9617C00231552 /* CHIPageControlSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHIPageControlSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				4313A7DB1E7A92320015A568 /* CHIPageControlPuya.swift */,
 				4313A7DC1E7A92320015A568 /* Core */,
 				4313A7901E7A831E0015A568 /* Info.plist */,
+				F687265B20E9617C00231552 /* CHIPageControlSize.swift */,
 			);
 			path = CHIPageControl;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F687265C20E9617C00231552 /* CHIPageControlSize.swift in Sources */,
 				4313A7E61E7A92320015A568 /* CHIPageControlPaprika.swift in Sources */,
 				4313A7E31E7A92320015A568 /* CHIPageControlFresno.swift in Sources */,
 				4313A7E21E7A92320015A568 /* CHIPageControlChimayo.swift in Sources */,
